@@ -1,0 +1,7 @@
+,Accuracy prueba 2D
+Bayes ingenuo,0.9
+PCA + Bayes ingenuo,0.9
+LDA,0.9
+QDA,0.9
+SVM lineal,0.9
+SVM RBF,0.88

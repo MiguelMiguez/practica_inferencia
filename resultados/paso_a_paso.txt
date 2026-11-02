@@ -1,0 +1,14 @@
+1. Carga de 'penguins.csv': 344 filas x 9 columnas.
+2. Eliminación de nulos: se quitan 11 filas (19 celdas vacías). Quedan 333 filas.
+3. Selección de variables: 4 predictoras numéricas ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g']; objetivo 'species' con clases ['Adelie', 'Chinstrap', 'Gentoo']. Se descartan 'id', 'year', 'island' y 'sex'.
+4. Exploración: histogramas, matriz de dispersión y matriz de correlación generados.
+5. División estratificada 70/30: 233 filas de entrenamiento y 100 de prueba.
+6. Balanceo por sobremuestreo: entrenamiento pasa de {'Adelie': 102, 'Chinstrap': 48, 'Gentoo': 83} a {'Adelie': 102, 'Chinstrap': 102, 'Gentoo': 102}. El conjunto de prueba NO se modifica.
+7. Estandarización: media 0 y desvío 1, calculados sólo con el entrenamiento balanceado.
+8. PCA: PC1 explica 63.5% y PC2 23.5% (acumulado 87.1%). Se usan las 2 primeras para visualizar fronteras.
+9. Entrenamiento de 6 modelos sobre el entrenamiento balanceado y estandarizado.
+10. Accuracy calculada sobre el conjunto de prueba y con validación cruzada estratificada 5x3.
+11. Matrices de confusión generadas y errores descriptos en resultados/errores_matriz_confusion.txt.
+12. Interpretación interna: medias/varianzas de Bayes, ejes discriminantes de LDA (LD1=86.4%) y vectores de soporte de SVM (lineal=33, RBF=57).
+13. Fronteras de decisión: cada modelo se reentrena sólo con PC1 y PC2 para poder dibujarlas.
+14. SVM: frontera multiclase (lineal y RBF) y ejemplo binario Adelie vs Chinstrap con 23 vectores de soporte.

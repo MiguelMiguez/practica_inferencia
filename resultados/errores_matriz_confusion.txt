@@ -1,0 +1,73 @@
+Bayes ingenuo: 97/100 aciertos (97.0%), 3 error(es).
+  - 2 Adelie clasificado(s) erróneamente como Chinstrap.
+  - 1 Chinstrap clasificado(s) erróneamente como Adelie.
+              precision    recall  f1-score   support
+
+      Adelie      0.977     0.955     0.966        44
+   Chinstrap      0.905     0.950     0.927        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          0.970       100
+   macro avg      0.961     0.968     0.964       100
+weighted avg      0.971     0.970     0.970       100
+
+PCA + Bayes ingenuo: 97/100 aciertos (97.0%), 3 error(es).
+  - 1 Adelie clasificado(s) erróneamente como Chinstrap.
+  - 2 Chinstrap clasificado(s) erróneamente como Adelie.
+              precision    recall  f1-score   support
+
+      Adelie      0.956     0.977     0.966        44
+   Chinstrap      0.947     0.900     0.923        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          0.970       100
+   macro avg      0.968     0.959     0.963       100
+weighted avg      0.970     0.970     0.970       100
+
+LDA: 100/100 aciertos (100.0%), 0 error(es).
+  - Sin errores en el conjunto de prueba.
+              precision    recall  f1-score   support
+
+      Adelie      1.000     1.000     1.000        44
+   Chinstrap      1.000     1.000     1.000        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          1.000       100
+   macro avg      1.000     1.000     1.000       100
+weighted avg      1.000     1.000     1.000       100
+
+QDA: 99/100 aciertos (99.0%), 1 error(es).
+  - 1 Adelie clasificado(s) erróneamente como Chinstrap.
+              precision    recall  f1-score   support
+
+      Adelie      1.000     0.977     0.989        44
+   Chinstrap      0.952     1.000     0.976        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          0.990       100
+   macro avg      0.984     0.992     0.988       100
+weighted avg      0.990     0.990     0.990       100
+
+SVM lineal: 98/100 aciertos (98.0%), 2 error(es).
+  - 2 Adelie clasificado(s) erróneamente como Chinstrap.
+              precision    recall  f1-score   support
+
+      Adelie      1.000     0.955     0.977        44
+   Chinstrap      0.909     1.000     0.952        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          0.980       100
+   macro avg      0.970     0.985     0.976       100
+weighted avg      0.982     0.980     0.980       100
+
+SVM RBF: 98/100 aciertos (98.0%), 2 error(es).
+  - 2 Adelie clasificado(s) erróneamente como Chinstrap.
+              precision    recall  f1-score   support
+
+      Adelie      1.000     0.955     0.977        44
+   Chinstrap      0.909     1.000     0.952        20
+      Gentoo      1.000     1.000     1.000        36
+
+    accuracy                          0.980       100
+   macro avg      0.970     0.985     0.976       100
+weighted avg      0.982     0.980     0.980       100
